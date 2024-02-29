@@ -27,7 +27,7 @@ function App() {
                 return(
                   <Card.Root key={"discovery-card-" + id}>
                     <Card.Header cardTitle={discovery.discoveryTitle} cardSubTitle={discovery.discoveryBonus}/>
-                    sas
+                    <Card.Content/>
                   </Card.Root>
                 )
               })
