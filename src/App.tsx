@@ -6,6 +6,9 @@ import vivoTheme from './styles/Vivo.styled';
 import { Title } from './components/Title';
 import { Main } from './components/Main';
 import AsideMenu from './components/AsideMenu';
+import { Card } from './components/Card/Card';
+import { CardsWrapper } from './components/CardsWrapper';
+
 
 function App() {
   return (
@@ -16,6 +19,17 @@ function App() {
         <Main>
           <Title>Tecnologias</Title>
           <Title>Descobrir</Title>
+          <CardsWrapper>
+            <Card.Root>
+              sas
+            </Card.Root>
+            <Card.Root>
+              sas
+            </Card.Root>
+            <Card.Root>
+              sas
+            </Card.Root>
+          </CardsWrapper>
         </Main>
       </ThemeProvider>
   );
