@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
-export const HeaderWrapper  = styled.header`
+
+export const HeaderContainer  = styled.header`
     background-color: ${props => props.theme.background};
     box-shadow: 0px 4px 4px 0px rgb(0,0,0,0.25);
+    width: 100%;
+
+`
+export const HeaderWrapper  = styled.div`
+    max-width: 1005px;
     display: flex;
     align-items: center;
+    margin: auto;
 `
 
 export const MenuIcon = styled.img`
