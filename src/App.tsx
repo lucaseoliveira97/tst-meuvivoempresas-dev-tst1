@@ -4,16 +4,17 @@ import GlobalStyle from './styles/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import vivoTheme from './styles/Vivo.styled';
 import { Title } from './components/Title';
+import { Main } from './components/Main';
 
 function App() {
   return (
     <ThemeProvider theme={vivoTheme}>
       <GlobalStyle />
-      <div className="App">
         <Header/>
-        <Title>Tecnologias</Title>
-        <Title>Descobrir</Title>
-      </div>
+        <Main>
+          <Title>Tecnologias</Title>
+          <Title>Descobrir</Title>
+        </Main>
       </ThemeProvider>
   );
 }
