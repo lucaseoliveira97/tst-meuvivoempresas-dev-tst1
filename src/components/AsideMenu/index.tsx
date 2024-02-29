@@ -3,8 +3,8 @@ import { MenuNav, MenuWrapper } from './style'
 
 export default function AsideMenu() {
   return (
-    <MenuWrapper>
-        <MenuNav>
+    <MenuWrapper openMenu={false}>
+        <MenuNav >
             menu
         </MenuNav>
     </MenuWrapper>
