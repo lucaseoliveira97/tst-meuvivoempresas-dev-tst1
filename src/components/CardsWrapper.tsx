@@ -5,7 +5,7 @@ export const CardsWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 187px;
-    margin: 21px 81px;
+    margin: 21px 71.5px;
     gap: 18px;
 `
 

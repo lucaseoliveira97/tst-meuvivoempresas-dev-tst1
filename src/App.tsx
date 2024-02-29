@@ -8,6 +8,7 @@ import { Main } from './components/Main';
 import AsideMenu from './components/AsideMenu';
 import { Card } from './components/Card/Card';
 import { CardsWrapper } from './components/CardsWrapper';
+import CardHeader from './components/Card/CardHeader';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Title>Descobrir</Title>
           <CardsWrapper>
             <Card.Root>
+              <Card.Header cardTitle='200 Mega' cardSubTitle='+Wi-fi e Modem grátis'/>
               sas
             </Card.Root>
             <Card.Root>
