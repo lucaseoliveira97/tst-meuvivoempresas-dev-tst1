@@ -9,6 +9,7 @@ import AsideMenu from './components/AsideMenu';
 import { Card } from './components/Card/Card';
 import { CardsWrapper } from './components/CardsWrapper';
 import CardHeader from './components/Card/CardHeader';
+import discoveries from './data/discoveries';
 
 
 function App() {
@@ -21,16 +22,16 @@ function App() {
           <Title>Tecnologias</Title>
           <Title>Descobrir</Title>
           <CardsWrapper>
-            <Card.Root>
-              <Card.Header cardTitle='200 Mega' cardSubTitle='+Wi-fi e Modem grátis'/>
-              sas
-            </Card.Root>
-            <Card.Root>
-              sas
-            </Card.Root>
-            <Card.Root>
-              sas
-            </Card.Root>
+            {
+              discoveries.map((discovery, id) =>{
+                return(
+                  <Card.Root key={"discovery-card-" + id}>
+                    <Card.Header cardTitle={discovery.discoveryTitle} cardSubTitle={discovery.discoveryBonus}/>
+                    sas
+                  </Card.Root>
+                )
+              })
+            }
           </CardsWrapper>
         </Main>
       </ThemeProvider>
