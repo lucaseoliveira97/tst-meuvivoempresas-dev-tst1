@@ -31,7 +31,7 @@ export const ArrowRight = styled(ArrowLeft)`
 `
 export type CarouselItemWrapperProps = {
     index:number,
-    activeItem:number,
+    $activeItem:number,
 }
 export const CarouselItemWrapper = styled.div`
     display: flex;
@@ -60,13 +60,13 @@ export const CarouselItemContainer= styled.div<CarouselItemWrapperProps>`
     height: 150px;
     width: 100%;
     transition: transform 0.3s linear;
-    transform: translateX(calc((100% + 16px) * ${props => -props.activeItem+1}));
+    transform: translateX(calc((100% + 16px) * ${props => -props.$activeItem+1}));
     & ${CarouselItemWrapper}
     {
-        opacity: ${props=>props.index !== props.activeItem ? "0.33" : "1"};
-        transform: scale(${props=> props.index !== props.activeItem? "0.5737" : "1"});
+        opacity: ${props=>props.index !== props.$activeItem ? "0.33" : "1"};
+        transform: scale(${props=> props.index !== props.$activeItem? "0.5737" : "1"});
         & ${CarouselItemTitle}{
-            opacity: ${props=>props.index !== props.activeItem ? "0" : "1"};
+            opacity: ${props=>props.index !== props.$activeItem ? "0" : "1"};
         }
     }
 `

@@ -17,7 +17,7 @@ const Carousel =({ itens }: CarouselProps) =>{
             <CarouselItensWrapper>
                 {itens.map((item, index) => {
                     return(
-                        <CarouselItemContainer key={"carousel-item"+index} index={index} activeItem={activeItem}>
+                        <CarouselItemContainer key={"carousel-item"+index} index={index} $activeItem={activeItem}>
                             <CarouselItem key={"carousel-"+index} item={item}/>
                         </CarouselItemContainer>)
                 })}
