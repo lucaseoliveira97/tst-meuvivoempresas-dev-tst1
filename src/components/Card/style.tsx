@@ -11,6 +11,11 @@ export const CardWrapper = styled.section`
     display: flex;
     flex-direction: column;
     gap: 5px;
+    transition: transform 0.2s linear;
+    &:hover
+    {
+        transform: translateY(-5px);
+    }
 
 `
 
