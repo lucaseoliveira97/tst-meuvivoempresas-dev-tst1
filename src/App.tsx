@@ -10,6 +10,7 @@ import { Card } from './components/Card/Card';
 import { CardsWrapper } from './components/CardsWrapper';
 import CardHeader from './components/Card/CardHeader';
 import discoveries from './data/discoveries';
+import Carousel from './components/Carousel';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <AsideMenu/>
         <Main>
           <Title>Tecnologias</Title>
+            <Carousel/>
           <Title>Descobrir</Title>
           <CardsWrapper>
             {
