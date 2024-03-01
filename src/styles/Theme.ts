@@ -4,5 +4,6 @@ type Theme  = {
     background:string;
     linkColor:string;
     linkBg:string;
+    mobileBreakpoint:number
 }
 export default Theme;
