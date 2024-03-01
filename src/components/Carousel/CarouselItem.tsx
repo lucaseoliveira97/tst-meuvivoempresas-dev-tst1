@@ -1,14 +1,17 @@
-import { CarouselItemWrapper } from "./style";
+import { CarouselItemType } from "../../data/technologies";
+import {CarouselItemContainer, CarouselItemWrapper, CarouselItemWrapperProps } from "./style";
+type CarouselItemProps = CarouselItemWrapperProps & {
+    item:CarouselItemType
 
-type CarouselItemProps = {
- inactive?:boolean
 }
  
-const CarouselItem =({  inactive=true}: CarouselItemProps) =>{
+const CarouselItem =({ item,index,activeItem }: CarouselItemProps) =>{
     return (
-        <CarouselItemWrapper inactive={inactive}>
-            
-        </CarouselItemWrapper>
+        <CarouselItemContainer index={index} activeItem={activeItem}>
+            <CarouselItemWrapper >
+                {item.name}
+            </CarouselItemWrapper>
+        </CarouselItemContainer>
     );
 }
 export default CarouselItem

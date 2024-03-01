@@ -11,7 +11,7 @@ import { CardsWrapper } from './components/CardsWrapper';
 import CardHeader from './components/Card/CardHeader';
 import discoveries from './data/discoveries';
 import Carousel from './components/Carousel';
-
+import {technologies} from './data/technologies'
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <AsideMenu/>
         <Main>
           <Title>Tecnologias</Title>
-            <Carousel/>
+            <Carousel itens={technologies}/>
           <Title>Descobrir</Title>
           <CardsWrapper>
             {
