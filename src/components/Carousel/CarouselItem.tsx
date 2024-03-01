@@ -1,5 +1,5 @@
 import { CarouselItemType } from "../../data/technologies";
-import { CarouselItemWrapper } from "./style";
+import { CarouselItemTitle, CarouselItemWrapper } from "./style";
 type CarouselItemProps =  {
     item:CarouselItemType
 
@@ -8,7 +8,7 @@ type CarouselItemProps =  {
 const CarouselItem =({ item}: CarouselItemProps) =>{
     return (
             <CarouselItemWrapper >
-                {item.name}
+                <CarouselItemTitle>{item.name}</CarouselItemTitle>
             </CarouselItemWrapper>  
     );
 }

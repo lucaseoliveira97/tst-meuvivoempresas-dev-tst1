@@ -25,13 +25,16 @@ export const ArrowLeft = styled.img`
 export const ArrowRight = styled(ArrowLeft)`
     transform: rotate(180deg);
 `
-
 export type CarouselItemWrapperProps = {
     index:number,
     activeItem:number,
 }
-
 export const CarouselItemWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
     height: 100%;
     width: 122px;
     border-radius: 15px;
@@ -39,6 +42,15 @@ export const CarouselItemWrapper = styled.div`
     box-shadow: 0px 4px 4px 0px #00000040;
     transition: transform 0.3s linear, opacity 0.3s linear;
 
+`
+export const CarouselItemTitle = styled.div`
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    transition: opacity 0.4s linear;
+    color: ${props=>props.theme.background};
 `
 export const CarouselItemContainer= styled.div<CarouselItemWrapperProps>`
     height: 150px;
@@ -49,5 +61,8 @@ export const CarouselItemContainer= styled.div<CarouselItemWrapperProps>`
     {
         opacity: ${props=>props.index !== props.activeItem ? "0.33" : "1"};
         transform: scale(${props=> props.index !== props.activeItem? "0.5737" : "1"});
+        & ${CarouselItemTitle}{
+            opacity: ${props=>props.index !== props.activeItem ? "0" : "1"};
+        }
     }
 `
