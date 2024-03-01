@@ -58,3 +58,25 @@ export const CardFooterWrapper = styled.footer`
     justify-content: center;
     align-items: center;
 `
+
+export const CardFeatureWrapper = styled.div`
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -13px;
+`
+export const CardFeatureTitle = styled.div`
+    width: 81%;
+    border-radius: 5px;
+    height: 22px;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    text-align: center;
+    color: black;
+    background-color: ${props=> props.theme.secondary};
+
+`

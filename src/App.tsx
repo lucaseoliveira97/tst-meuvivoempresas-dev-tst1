@@ -26,6 +26,7 @@ function App() {
               discoveries.map((discovery, id) =>{
                 return(
                   <Card.Root key={"discovery-card-" + id}>
+                    {discovery.discoveryFeature && <Card.Feature feature={discovery.discoveryFeature}/>}
                     <Card.Header cardTitle={discovery.discoveryTitle} cardSubTitle={discovery.discoveryBonus}/>
                     <Card.Content/>
                     <Card.Footer/>
