@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CarouselItemType } from "../../data/technologies";
 import CarouselItem from "./CarouselItem";
-import { ArrowLeft, CarouselContainer, CarouselItensWrapper, CarouselItemContainer } from "./style";
+import { ArrowLeft, ArrowRight,CarouselContainer, CarouselItensWrapper, CarouselItemContainer } from "./style";
 import arrowIcon from '../../assets/arrow-icon.svg'
 import useCarousel from "../../hooks/useCarousel";
 
@@ -21,7 +21,7 @@ const Carousel =({ itens }: CarouselProps) =>{
                         </CarouselItemContainer>)
                 })}
             </CarouselItensWrapper>
-            <ArrowLeft src={arrowIcon} onClick={next}/>
+            <ArrowRight src={arrowIcon} onClick={next}/>
         </CarouselContainer>
     );
 }

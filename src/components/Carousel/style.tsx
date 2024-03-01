@@ -3,9 +3,10 @@ import { styled } from "styled-components";
 export const CarouselContainer = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 181px;
 `
 export const CarouselItensWrapper = styled.div`
     display: flex;
@@ -14,9 +15,16 @@ export const CarouselItensWrapper = styled.div`
     overflow: hidden;
     width: calc((122px*3 + (16px*2)));
 `
-export const ArrowLeft = styled.img`
 
+export const ArrowLeft = styled.img`
+    cursor: pointer;
+    width: 11.67px;
+    height: 19.8px;
 `
+export const ArrowRight = styled(ArrowLeft)`
+    transform: rotate(180deg);
+`
+
 export type CarouselItemWrapperProps = {
     index:number,
     activeItem:number,
@@ -28,7 +36,7 @@ export const CarouselItemWrapper = styled.div`
     border-radius: 15px;
     background-color: ${props=>props.theme.primary};
     box-shadow: 0px 4px 4px 0px #00000040;
-    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, opacity 0.3s linear;
 
 `
 export const CarouselItemContainer= styled.div<CarouselItemWrapperProps>`
