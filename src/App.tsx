@@ -10,13 +10,16 @@ import { CardsWrapper } from './components/CardsWrapper';
 import discoveries from './data/discoveries';
 import Carousel from './components/Carousel';
 import {technologies} from './data/technologies'
+import MenuProvider from './context/menuContext';
 
 function App() {
   return (
     <ThemeProvider theme={vivoTheme}>
       <GlobalStyle />
+      <MenuProvider>
         <Header/>
         <AsideMenu/>
+      </MenuProvider>
         <Main>
           <Title>Tecnologias</Title>
             <Carousel itens={technologies}/>
