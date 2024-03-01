@@ -21,10 +21,14 @@ type ArrowIconProps =
     $inactiveNav:boolean
 }
 export const ArrowLeft = styled.img<ArrowIconProps>`
-    cursor: ${props=> props.$inactiveNav ? "not-allowed" : "pointer"};
+    cursor: ${props=> props.$inactiveNav ? "default" : "pointer"};
     width: 11.67px;
     height: 19.8px;
-    opacity: ${props=> props.$inactiveNav ? "0.3" : "1"}
+    opacity: ${props=> props.$inactiveNav ? "0.3" : "1"};
+    &:hover
+    {
+        opacity:${props=> props.$inactiveNav ? "0.3" : "0.7"};
+    }
 `
 export const ArrowRight = styled(ArrowLeft)`
     transform: rotate(180deg);
