@@ -10,7 +10,6 @@ export const CarouselItensContainer = styled.div`
 export const CarouselItensWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: center;
     gap: 16px;
     overflow: hidden;
     width: calc((122px*3 + (16px*2)));
@@ -25,7 +24,7 @@ export type CarouselItemWrapperProps = {
 
 export const CarouselItemWrapper = styled.div`
     height: 100%;
-    width: 100%;
+    width: 122px;
     border-radius: 15px;
     background-color: ${props=>props.theme.primary};
     box-shadow: 0px 4px 4px 0px #00000040;
