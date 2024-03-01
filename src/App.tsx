@@ -28,6 +28,7 @@ function App() {
                   <Card.Root key={"discovery-card-" + id}>
                     <Card.Header cardTitle={discovery.discoveryTitle} cardSubTitle={discovery.discoveryBonus}/>
                     <Card.Content/>
+                    <Card.Footer/>
                   </Card.Root>
                 )
               })

@@ -53,3 +53,8 @@ export const CardContentWrapper = styled.div`
     height: 75px;
     background-color: #F5F0F0;
 `
+export const CardFooterWrapper = styled.footer`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
