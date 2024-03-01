@@ -2,6 +2,6 @@ import { styled } from "styled-components";
 
 export const Main = styled.main`
     width: 827px ;
-    margin: auto;
+    margin: 48px auto;
 
 `

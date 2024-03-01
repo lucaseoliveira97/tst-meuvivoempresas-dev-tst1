@@ -1,5 +1,5 @@
 import { CarouselItemType } from "../../data/technologies";
-import {CarouselItemContainer, CarouselItemWrapper, CarouselItemWrapperProps } from "./style";
+import { CarouselItemWrapper } from "./style";
 type CarouselItemProps =  {
     item:CarouselItemType
 
@@ -7,11 +7,9 @@ type CarouselItemProps =  {
  
 const CarouselItem =({ item}: CarouselItemProps) =>{
     return (
-        
             <CarouselItemWrapper >
                 {item.name}
-            </CarouselItemWrapper>
-       
+            </CarouselItemWrapper>  
     );
 }
 export default CarouselItem
