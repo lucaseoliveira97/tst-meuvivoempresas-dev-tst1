@@ -11,6 +11,7 @@ export const Link = styled.a`
     background-color: ${props=> props.theme.linkBg};
     color: ${props=> props.theme.linkColor};
     cursor: pointer;
+    transition: background-color 0.4s linear;
 
     &:hover
     {
