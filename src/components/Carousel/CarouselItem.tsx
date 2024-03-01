@@ -9,6 +9,7 @@ const CarouselItem =({ item}: CarouselItemProps) =>{
     return (
             <CarouselItemWrapper >
                 <CarouselItemTitle>{item.name}</CarouselItemTitle>
+                {item.icon}
             </CarouselItemWrapper>  
     );
 }
