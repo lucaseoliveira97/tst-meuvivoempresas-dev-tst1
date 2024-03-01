@@ -10,9 +10,10 @@ type CarouselProps = {
 }
 const Carousel =({ itens }: CarouselProps) =>{
     const [activeItem, prev,next] = useCarousel(itens.length)
+
     return (
         <CarouselContainer>
-            <ArrowLeft src={arrowIcon} onClick={prev}/>
+            <ArrowLeft src={arrowIcon} onClick={prev} $inactiveNav={activeItem==0}/>
             <CarouselItensWrapper>
                 {itens.map((item, index) => {
                     return(
@@ -21,7 +22,7 @@ const Carousel =({ itens }: CarouselProps) =>{
                         </CarouselItemContainer>)
                 })}
             </CarouselItensWrapper>
-            <ArrowRight src={arrowIcon} onClick={next}/>
+            <ArrowRight src={arrowIcon} onClick={next} $inactiveNav={activeItem==itens.length-1}/>
         </CarouselContainer>
     );
 }

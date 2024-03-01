@@ -16,11 +16,15 @@ export const CarouselItensWrapper = styled.div`
     width: calc((122px*3 + (16px*2)));
     padding: 10px 0;
 `
-
-export const ArrowLeft = styled.img`
-    cursor: pointer;
+type ArrowIconProps = 
+{
+    $inactiveNav:boolean
+}
+export const ArrowLeft = styled.img<ArrowIconProps>`
+    cursor: ${props=> props.$inactiveNav ? "not-allowed" : "pointer"};
     width: 11.67px;
     height: 19.8px;
+    opacity: ${props=> props.$inactiveNav ? "0.3" : "1"}
 `
 export const ArrowRight = styled(ArrowLeft)`
     transform: rotate(180deg);
