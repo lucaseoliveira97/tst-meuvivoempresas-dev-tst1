@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const CarouselItensContainer = styled.div`
+export const CarouselContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -31,7 +31,6 @@ export const CarouselItemWrapper = styled.div`
     transition: transform 0.3s linear;
 
 `
-const teste = 2;
 export const CarouselItemContainer= styled.div<CarouselItemWrapperProps>`
     height: 150px;
     width: 100%;
