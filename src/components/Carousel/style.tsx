@@ -14,6 +14,7 @@ export const CarouselItensWrapper = styled.div`
     gap: 16px;
     overflow: hidden;
     width: calc((122px*3 + (16px*2)));
+    padding: 10px 0;
 `
 
 export const ArrowLeft = styled.img`
