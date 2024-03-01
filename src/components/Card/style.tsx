@@ -25,7 +25,7 @@ export const CardHeaderWrapper = styled.header`
 export const CardTitle = styled.h2`
     font-size: 24px;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 32px;
     letter-spacing: 0.1em;
     text-align: left;
     color: ${props => props.theme.primary};
