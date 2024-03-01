@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './components/Header';
 import GlobalStyle from './styles/GlobalStyle';
 import { ThemeProvider } from 'styled-components';
@@ -8,7 +7,6 @@ import { Main } from './components/Main';
 import AsideMenu from './components/AsideMenu';
 import { Card } from './components/Card/Card';
 import { CardsWrapper } from './components/CardsWrapper';
-import CardHeader from './components/Card/CardHeader';
 import discoveries from './data/discoveries';
 import Carousel from './components/Carousel';
 import {technologies} from './data/technologies'
