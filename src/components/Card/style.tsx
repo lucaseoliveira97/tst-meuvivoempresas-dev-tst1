@@ -4,7 +4,6 @@ export const CardWrapper = styled.section`
     height:100%;
     width: 100%;
     position: relative;
-    width: calc(100%/3);
     border-radius: 10px;
     background-color: ${props=>props.theme.background};
     box-shadow: 0px 4px 20px 0px #00000040;
@@ -62,6 +61,7 @@ export const CardFooterWrapper = styled.footer`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5px;
 `
 
 export const CardFeatureWrapper = styled.div`
