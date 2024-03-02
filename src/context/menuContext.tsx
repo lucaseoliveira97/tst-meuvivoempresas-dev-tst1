@@ -8,11 +8,12 @@ export type MenuContextType = {
 export const MenuContext = createContext<MenuContextType | undefined>(undefined);
 
 type MenuProviderProps = {
+    initial?:boolean,
     children: ReactNode;
 }
 
-function MenuProvider({ children }: MenuProviderProps) {
-    const [open, setOpen] = useState<boolean>(false);
+function MenuProvider({ initial = false,children }: MenuProviderProps) {
+    const [open, setOpen] = useState<boolean>(initial);
     return (
         <MenuContext.Provider value={{ open, setOpen }}>
             {children}
