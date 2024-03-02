@@ -6,7 +6,7 @@ export const CarouselContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 181px;
+    padding: 10px 181px 32px;
 `
 export const CarouselItensWrapper = styled.div`
     display: flex;
