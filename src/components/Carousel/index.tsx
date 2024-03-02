@@ -13,7 +13,7 @@ const Carousel =({ itens }: CarouselProps) =>{
 
     return (
         <CarouselContainer>
-            <ArrowLeft src={arrowIcon} onClick={prev} $inactiveNav={activeItem==0}/>
+            <ArrowLeft role="navigation" src={arrowIcon} onClick={prev} $inactiveNav={activeItem==0}/>
             <CarouselItensWrapper>
                 {itens.map((item, index) => {
                     return(
@@ -22,7 +22,7 @@ const Carousel =({ itens }: CarouselProps) =>{
                         </CarouselItemContainer>)
                 })}
             </CarouselItensWrapper>
-            <ArrowRight src={arrowIcon} onClick={next} $inactiveNav={activeItem==itens.length-1}/>
+            <ArrowRight role="navigation" src={arrowIcon} onClick={next} $inactiveNav={activeItem==itens.length-1}/>
         </CarouselContainer>
     );
 }
