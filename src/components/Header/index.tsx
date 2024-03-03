@@ -1,6 +1,4 @@
-import { HeaderContainer, HeaderWrapper, MenuIcon, MenuIconWrapper, VivoLogo } from "./style"
-import menuIcon from '../../assets/menu-icon.svg'
-import closeMenuIcon from '../../assets/close-icon.svg'
+import { HeaderContainer, HeaderWrapper, MenuIconWrapper, VivoLogo } from "./style"
 import vivoLogo from '../../assets/vivo-logo-1.png'
 import useMenu from "../../hooks/useMenu"
 import OpenCloseIcon from "../../assets/openCloseIcon"
