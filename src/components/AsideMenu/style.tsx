@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 type MenuNavProp = 
 {
-    openMenu:boolean
+    $openMenu:boolean
 }
 export const MenuNav = styled.nav`
     width: 41.791vw;
@@ -21,12 +21,12 @@ export const MenuWrapper = styled.div<MenuNavProp>`
     z-index: 99;
     left: 0;
     background: #6C6868C9;
-    opacity: ${props => props.openMenu ? "1" : "0"};
-    visibility: ${props => props.openMenu ? "visible" : "hidden"};;
+    opacity: ${props => props.$openMenu ? "1" : "0"};
+    visibility: ${props => props.$openMenu ? "visible" : "hidden"};;
     transition: opacity 0.5s linear, visibility 0.5s linear;
     & ${MenuNav}
     {
-        transform: translateX(${props => props.openMenu ? "0%" : "-100%"});
+        transform: translateX(${props => props.$openMenu ? "0%" : "-100%"});
     }
     
 `

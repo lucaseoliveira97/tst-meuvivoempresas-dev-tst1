@@ -4,7 +4,7 @@ import useMenu from '../../hooks/useMenu';
 export default function AsideMenu() {
   const {open, setOpen} = useMenu();
   return (
-    <MenuWrapper openMenu={open} onClick={()=> setOpen(false)}>
+    <MenuWrapper $openMenu={open} onClick={()=> setOpen(false)}>
         <MenuNav  onClick={(e) => e.stopPropagation()}>
             <ul>
               <li><MenuItem href='#'>Meu Vivo empresas</MenuItem></li>
