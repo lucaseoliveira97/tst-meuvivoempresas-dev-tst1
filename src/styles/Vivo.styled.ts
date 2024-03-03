@@ -6,6 +6,7 @@ const vivoTheme : Theme = {
     background:"#FFFAFA",
     linkBg:"#28A208",
     linkColor:"#FCFCFC",
-    mobileBreakpoint:770
+    mdBreakpoint:768,
+    smBreakpoint:479
 }
 export default vivoTheme;
