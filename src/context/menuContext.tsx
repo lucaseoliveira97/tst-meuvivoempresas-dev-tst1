@@ -7,7 +7,7 @@ export type MenuContextType = {
 
 export const MenuContext = createContext<MenuContextType | undefined>(undefined);
 
-type MenuProviderProps = {
+export type MenuProviderProps = {
     initial?:boolean,
     children: ReactNode;
 }
