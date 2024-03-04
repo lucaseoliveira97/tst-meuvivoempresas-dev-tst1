@@ -38,7 +38,7 @@ export const IconWrapper = styled.div<IconLineProps>`
 
 const OpenCloseIcon =({ open,onClick }: OpenCloseIconProps) =>{
     return (
-        <IconWrapper onClick={onClick} open={open}>
+        <IconWrapper onClick={onClick} open={open} role="button">
             <IconLine />
             <IconLine />
             <IconLine />
