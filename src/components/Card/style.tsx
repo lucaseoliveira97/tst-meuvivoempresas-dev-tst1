@@ -27,9 +27,9 @@ export const CardHeaderWrapper = styled.header`
     gap: 0 11.71px;
 `
 export const CardTitle = styled.h2`
-    font-size: 24px;
+    font-size: clamp(1.125rem, 0.5694rem + 1.4815vw, 1.5rem);
     font-weight: 500;
-    line-height: 32px;
+    line-height: clamp(1.625rem, 1.0694rem + 1.4815vw, 2rem);
     letter-spacing: 0.1em;
     text-align: left;
     color: ${props => props.theme.primary};
@@ -75,7 +75,7 @@ export const CardFeatureTitle = styled.div`
     width: 81%;
     border-radius: 5px;
     height: 22px;
-    font-size: 10px;
+    font-size: clamp(0.5rem, 0.3148rem + 0.4938vw, 0.625rem);
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0.1em;

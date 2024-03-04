@@ -6,7 +6,7 @@ export const Link = styled.a`
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0.1em;
-    text-align: left;
+    text-align: center;
     border-radius: 5px;
     background-color: ${props=> props.theme.linkBg};
     color: ${props=> props.theme.linkColor};
