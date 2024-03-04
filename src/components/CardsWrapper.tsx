@@ -16,7 +16,7 @@ export const CardsWrapper = styled.div`
         gap: 46px 18px;
   }
   @media (min-width:${({theme}) => theme.smBreakpoint+1}px) and (max-width: ${({theme}) => theme.mdBreakpoint}px) {
-        background-color: red;
+      padding: 0%;
   }
 `
 
