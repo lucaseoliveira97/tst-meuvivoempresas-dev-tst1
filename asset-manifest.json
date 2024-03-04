@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/tst-meuvivoempresas-dev-tst1/static/css/main.4f87afde.css",
+    "main.js": "/tst-meuvivoempresas-dev-tst1/static/js/main.56717b74.js",
+    "static/js/453.ed3810f9.chunk.js": "/tst-meuvivoempresas-dev-tst1/static/js/453.ed3810f9.chunk.js",
+    "static/media/vivo-logo-1.png": "/tst-meuvivoempresas-dev-tst1/static/media/vivo-logo-1.a3971ddf2b66bb8cf799.png",
+    "static/media/wifi-icon.svg": "/tst-meuvivoempresas-dev-tst1/static/media/wifi-icon.255c7b4316522fea5bd9a0a2938a4498.svg",
+    "index.html": "/tst-meuvivoempresas-dev-tst1/index.html",
+    "static/media/arrow-icon.svg": "/tst-meuvivoempresas-dev-tst1/static/media/arrow-icon.be7782ec9de5da3b74b381ded2a461ff.svg",
+    "main.4f87afde.css.map": "/tst-meuvivoempresas-dev-tst1/static/css/main.4f87afde.css.map",
+    "main.56717b74.js.map": "/tst-meuvivoempresas-dev-tst1/static/js/main.56717b74.js.map",
+    "453.ed3810f9.chunk.js.map": "/tst-meuvivoempresas-dev-tst1/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f87afde.css",
+    "static/js/main.56717b74.js"
+  ]
+}
