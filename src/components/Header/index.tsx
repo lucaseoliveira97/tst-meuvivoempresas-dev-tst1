@@ -8,7 +8,7 @@ const Header =() =>{
     return (
         <HeaderContainer>
             <HeaderWrapper>
-                <MenuIconWrapper>
+                <MenuIconWrapper >
                     <OpenCloseIcon open={open} onClick={() => setOpen(prev=>!prev)} />
                 </MenuIconWrapper>
                 <VivoLogo src={vivoLogo} alt="Vivo logotipo" />
