@@ -6,11 +6,12 @@ export const CarouselContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 181px 32px;
+    padding: 10px clamp(1rem, -17.5rem + 59.2vw, 12.1rem) 32px;
 `
 export const CarouselItensWrapper = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 16px;
     overflow: hidden;
     width: calc((122px*3 + (16px*2)));
